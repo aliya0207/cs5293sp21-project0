@@ -24,19 +24,16 @@ def extractincidents(fp):
     page1 = pdfReader.getPage(0).extractText()
    # print(page1)
     
+    
     all_pages = []
     read_pdf = PyPDF2.PdfFileReader(fp)
     number_of_pages = read_pdf.getNumPages()
     for page_number in range(number_of_pages): 
-        page = read_pdf.getPage(page_number).extractText().split("\n")  
-        all_pages.append(page)
-    all_pages=[]
-    for x in range(pdfReader.getNumPages()):
-        page=pdfReader.getPage(x).extractText()
+        page = read_pdf.getPage(page_number).extractText()  
         paged=re.sub(' \n', ' ',page)
         all_pages.append(paged)
-       # print(all_pages)
-        
+    #print(all_pages)
+    
     ttl_dates=[]
     ttl_incd_num=[]
     ttl_loc=[]
