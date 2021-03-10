@@ -1,4 +1,4 @@
-import urllib
+import urllib.request
 import PyPDF2
 import re
 import tempfile
@@ -22,7 +22,7 @@ def extractincidents(fp):
     pdfReader.getNumPages()
 
     page1 = pdfReader.getPage(0).extractText()
-    print(page1)
+   # print(page1)
     
     all_pages = []
     read_pdf = PyPDF2.PdfFileReader(fp)
@@ -35,7 +35,7 @@ def extractincidents(fp):
         page=pdfReader.getPage(x).extractText()
         paged=re.sub(' \n', ' ',page)
         all_pages.append(paged)
-        print(all_pages)
+       # print(all_pages)
         
     ttl_dates=[]
     ttl_incd_num=[]
@@ -105,4 +105,4 @@ def status(db):
               GROUP BY `nature` """)
     for val in final_output:
         print(f'{val[0]}|{val[1]}')
-        return final_output
+    return final_output
