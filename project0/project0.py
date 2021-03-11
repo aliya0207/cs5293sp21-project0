@@ -52,11 +52,15 @@ def extractincidents(fp):
         location=g[2::5]
         nature=g[3::5]
         incd_ori=g[4::5]
-        date.pop(-1)
+        # to remove the extra information at the last page of the pdf.
+        date.pop(-1) 
         if count==0:
+            # to remove the headers on page 1 which is count=0.
             incd_num.pop(-1)
+            # to remove the extra white spaces at the end of the page.
             location.pop(-1)
         if count==len(all_pages)-1:
+            # to remove the extra space on the last page of pdf.
             incd_num.pop(-1)
 
         ttl_dates.extend(date)
@@ -102,5 +106,5 @@ def status(db):
               GROUP BY `nature` """)
     val=[]
     for val in final_output:
-        print(f'{val[0]}|{val[1]}')
+        print(f'{val[0]}|{val[1]}') # in order to get the right output without the () brackets and " ".
     return val
