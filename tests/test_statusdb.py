@@ -11,7 +11,7 @@ def test_status():
     incidents= project0.extractincidents(incident_data)
     db=project0.createdb()
     #project0.populatedb(incidents)
-    val= project0.status(db)
-    assert val is not None
-    assert isinstance(val,list)
+    value= project0.status(db)
+    assert value is not None
+    assert isinstance(value,list)
     
