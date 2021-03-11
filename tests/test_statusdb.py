@@ -10,8 +10,8 @@ def test_status():
     incident_data= project0.fetchincidents(url)
     incidents= project0.extractincidents(incident_data)
     db= project0.createdb()
-    output= project0.status(db)
+    final_output= project0.status(db)
     #msg= "Error. test not satisfied."
-    assert output is not None
-    assert isinstance(output,list)
+    assert final_output is not None
+    assert isinstance(final_output,list)
     
