@@ -8,9 +8,10 @@ url = "https://www.normanok.gov/sites/default/files/documents/2021-03/2021-03-01
 
 def test_status():
     incident_data= project0.fetchincidents(url)
-    incidents= project0.extractincidents(incident_data)
-    db= project0.createdb()
-    final_output= project0.status(db)
+    incidents= project0.extractincidents()
+    project0.createdb()
+    project0.populatedb(incidents)
+    final_output= project0.status()
     assert final_output is not None
-    assert isinstance(final_output,str)
+    assert type(final_output)==str
     
