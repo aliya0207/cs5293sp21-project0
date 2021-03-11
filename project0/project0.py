@@ -102,4 +102,4 @@ def status(db):
               GROUP BY `nature` """)
     for val in final_output:
         print(f'{val[0]}|{val[1]}')
-    return final_output
+    return val
