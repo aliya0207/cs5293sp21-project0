@@ -9,9 +9,9 @@ url = "https://www.normanok.gov/sites/default/files/documents/2021-03/2021-03-01
 def test_status():
     incident_data= project0.fetchincidents(url)
     incidents= project0.extractincidents(incident_data)
-    project0.createdb()
+    db=project0.createdb()
     #project0.populatedb(incidents)
-    final_output= project0.status()
+    final_output= project0.status(db)
     assert final_output is not None
     assert type(final_output)==str
     
