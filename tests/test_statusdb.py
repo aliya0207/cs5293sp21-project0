@@ -8,7 +8,7 @@ url = "https://www.normanok.gov/sites/default/files/documents/2021-03/2021-03-01
 
 def test_status():
     incident_data= project0.fetchincidents(url)
-    incidents= project0.extractincidents()
+    incidents= project0.extractincidents(incident_data)
     project0.createdb()
     project0.populatedb(incidents)
     final_output= project0.status()
