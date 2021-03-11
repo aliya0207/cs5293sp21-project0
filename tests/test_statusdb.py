@@ -13,5 +13,5 @@ def test_status():
     #project0.populatedb(incidents)
     final_output= project0.status(db)
     assert final_output is not None
-    #assert type(final_output)==str
+    assert len(final_output)>10
     
