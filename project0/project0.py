@@ -100,6 +100,7 @@ def status(db):
     db= database.cursor()
     final_output=db.execute(""" SELECT `nature`, count(*) FROM `incidents`
               GROUP BY `nature` """)
+    val=[]
     for val in final_output:
         print(f'{val[0]}|{val[1]}')
     return val
