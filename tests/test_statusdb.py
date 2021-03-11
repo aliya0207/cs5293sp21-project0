@@ -10,7 +10,8 @@ def test_status():
     incident_data= project0.fetchincidents(url)
     incidents= project0.extractincidents(incident_data)
     db= project0.createdb()
+    project0.populatedb(incidents)
     final_output= project0.status(db)
     assert final_output is not None
-    assert isinstance(final_output,list)
+    assert isinstance(final_output,str)
     
