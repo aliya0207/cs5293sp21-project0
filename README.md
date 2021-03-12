@@ -90,3 +90,5 @@ https://www.programiz.com/python-programming/methods/built-in/enumerate // Helpe
 https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-lists-tuples-strings-and-other-sequential-types/ // Helped with list slicing concepts.
 
 https://www.tutorialspoint.com/sqlite/sqlite_python.htm // Helped with sqlite functions in python.
+Anjali Reddy Tippana (co-student) // Helped in discussing how to split and extract data.
+Lahari Mittapalli (co-student) // Helped in discussing test cases.
