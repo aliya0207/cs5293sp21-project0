@@ -68,4 +68,24 @@ The status() function displays the nature of the incidents and their count. i.e 
 
 ### TESTS:
 
-##### 1. test
+##### 1. test_fetch.py: 
+This test was done to check if the function fetchincidents() is downloading from the given url and writing in the text file. Then we check if the file is none or not.
+
+##### 2. test_extract.py:
+This test was done to check if the data was extracted from the function extractincidents(). It is checked if the length of the list is more than 0 and the list is not empty.
+
+##### 3. test_createdb.py:
+Test done to confirm/verify that a database was created.
+
+##### 4. test_populatedb.py:
+This test is done to verify that all the data is inserted into the database. 
+
+##### 5. test_status.py:
+This test is done to check if the output is not none and if it is in the form of a list.
+
+### REFERENCES:
+https://www.youtube.com/watch?v=-odIpHlhByg // Helped me in understanding how to extract data from PDF files.
+https://www.youtube.com/watch?v=sZyAn2TW7GY // Helped me in understanding regualr expressions in Python.
+https://www.programiz.com/python-programming/methods/built-in/enumerate // Helped in understanding Python's enumerate function.
+https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-lists-tuples-strings-and-other-sequential-types/ // Helped with list slicing concepts.
+https://www.tutorialspoint.com/sqlite/sqlite_python.htm // Helped with sqlite functions in python.
