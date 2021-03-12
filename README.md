@@ -91,4 +91,4 @@ https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-
 
 https://www.tutorialspoint.com/sqlite/sqlite_python.htm // Helped with sqlite functions in python.
 Anjali Reddy Tippana (co-student) // Helped in discussing how to split and extract data.
-Lahari Mittapalli (co-student) // Helped in discussing test cases.
+Lahari Mittapalli (co-student) // Helped in discussing test cases 
